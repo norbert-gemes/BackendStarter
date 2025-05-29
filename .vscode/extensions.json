@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "humao.rest-client",
+        "tomoki1207.pdf",
+        "mariusalchimavicius.json-to-ts"
+    ]
+}

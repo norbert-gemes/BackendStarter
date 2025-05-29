@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "lib": ["es2023"],
+        // Ignore module structure
+        "module": "Preserve",
+        // Treat files as modules even if it doesn't use import/export
+        "moduleDetection": "force",
+        // Allow JSON modules to be imported
+        "resolveJsonModule": true,
+        // Allow JS files to be imported from TS and vice versa
+        "allowJs": true,
+        // Use correct ESM import behavior
+        "esModuleInterop": true,
+        // Disallow features that require cross-file awareness
+        "isolatedModules": true,
+        "target": "es2022",
+        "strict": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "rootDir": "./"
+    },
+    "include": ["src/**/*.ts", "src/**/*.mjs", "./eslint.config.mjs"],
+    "exclude": ["dist", "node_modules"]
+}

@@ -1,0 +1,18 @@
+Előkészületek:
+==============
+1. Backend vizsga starter repo klónozása, átnevezése, npm i
+2. VS CODE indítása, frissítések, ajánlott csomagok telepítése
+3. Csoportos átnevezések 5db (azonoítókért lsd. forrás mongo.bat és feladatlap):
+    AdatbázisNeve, TáblaNeveOne, TáblaNeveMany, FK_neve, /api/xyzMany*
+    * ->  "Domináns" route, jellemzően a manySide-hoz tartozik, csak az "xyzMany" kerüljön átnevezésre Postman esetén
+
+Feladatmegoldás:
+================
+1. "one", "many" oldali táblák interfészeinek aktualizálása: interfaces.ts
+2. "one", "many" oldali táblák modelljeinek aktualizálása: models.ts
+3. Mongo szerver indítása: cmd -> startMongoDB.bat futtatása
+4. Adatbázis és a kollekciók (táblák) létrehozása, mintaadatok feltöltése a kiadott mongo.bat, vagy a sablon mongo_import/mongo_v*.bat futtatásával.
+5. Fordítás indítása ("npm run dev")
+6. "one" és "many" oldali kontrollerek (routes, handlers) aktualizálása: controllers.ts,
+7. "Takarítás": model-ek, controller-ek
+8. Felesleges állományok, mappák (.git, node_modules) törlése, majd a projekt becsomagolása a megadott helyre és néven

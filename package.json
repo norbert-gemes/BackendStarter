@@ -1,0 +1,64 @@
+{
+    "name": "jedlik-express-mongoose-ts-tsx-backend-template",
+    "version": "1.0.0",
+    "description": "Jedlik project template for backend exam",
+    "type": "commonjs",
+    "main": "index.js",
+    "repository": {
+        "private": false,
+        "type": "git",
+        "url": "https://github.com/nits68/jedlik-backend-starter-tsx"
+    },
+    "scripts": {
+        "dev": "tsx --watch --env-file=.env.example --inspect src/server.ts",
+        "start": "node --env-file .env dist/server.js",
+        "build": "tsc",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "kill": "taskkill /f /im node.exe",
+        "test": "vitest",
+        "test:run": "vitest --run",
+        "test:ui": "vitest --ui",
+        "coverage": "vitest run --coverage"
+    },
+    "author": "Nits László",
+    "imports": {
+        "#*": "./src/*"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "mongoose": "^8.14.0",
+        "morgan": "^1.10.0",
+        "tslib": "^2.8.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.25.1",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.1",
+        "@types/morgan": "^1.9.9",
+        "@types/node": "^22.15.3",
+        "@vitest/coverage-v8": "^3.1.2",
+        "@vitest/eslint-plugin": "^1.1.43",
+        "eslint": "^9.25.1",
+        "eslint-plugin-perfectionist": "^4.12.3",
+        "prettier": "^3.5.3",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.31.0",
+        "vitest": "^3.1.2"
+    },
+    "prettier": {
+        "semi": true,
+        "trailingComma": "all",
+        "printWidth": 120,
+        "tabWidth": 4,
+        "endOfLine": "auto",
+        "arrowParens": "avoid"
+    }
+}

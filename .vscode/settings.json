@@ -1,0 +1,37 @@
+{
+    "eslint.validate": ["javascript", "typescript"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "files.autoSave": "afterDelay",
+    "files.eol": "\r\n",
+    "files.exclude": {
+        "**/.git": false,
+        "**/.gitignore": false,
+        "**/.vscode": false,
+        "**/tsconfig.json": false,
+        "**/tslint.json": false,
+        "**/package-lock.json": true,
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/*.js.map": true,
+        "**/*.npmrc": true
+    },
+    "git.autofetch": true,
+    "git.autofetchPeriod": 60,
+    "git.enableSmartCommit": true,
+    "editor.mouseWheelZoom": true,
+}
